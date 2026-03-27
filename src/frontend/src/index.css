@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* App bg #F6F8FB */
+    --background: 0.973 0.007 240;
+    /* Card bg #FFFFFF */
+    --card: 1 0 0;
+    --card-foreground: 0.258 0.02 250;
+    /* Borders #E6EAF0 */
+    --border: 0.922 0.012 240;
+    --input: 0.922 0.012 240;
+    /* Text primary #1F2937 */
+    --foreground: 0.258 0.02 250;
+    /* Text secondary #6B7280 */
+    --muted: 0.97 0.007 240;
+    --muted-foreground: 0.557 0.01 250;
+    /* Primary blue #2F80ED */
+    --primary: 0.585 0.185 245;
+    --primary-foreground: 1 0 0;
+    /* Secondary */
+    --secondary: 0.95 0.01 240;
+    --secondary-foreground: 0.258 0.02 250;
+    /* Accent */
+    --accent: 0.93 0.012 245;
+    --accent-foreground: 0.585 0.185 245;
+    /* Destructive #EF4444 */
+    --destructive: 0.62 0.22 29;
+    --destructive-foreground: 1 0 0;
+    /* Popover */
+    --popover: 1 0 0;
+    --popover-foreground: 0.258 0.02 250;
+    /* Ring */
+    --ring: 0.585 0.185 245;
+    /* Success #22C55E */
+    --success: 0.7 0.2 145;
+    --success-foreground: 0.15 0.05 145;
+    --success-bg: 0.97 0.04 145;
+    /* Warning #F59E0B */
+    --warning: 0.77 0.18 65;
+    --warning-foreground: 0.35 0.1 65;
+    --warning-bg: 0.98 0.04 65;
+    /* Danger bg #FDE8E8 */
+    --danger-bg: 0.97 0.04 29;
+    /* Charts */
+    --chart-1: 0.585 0.185 245;
+    --chart-2: 0.7 0.2 145;
+    --chart-3: 0.77 0.18 65;
+    --chart-4: 0.62 0.22 29;
+    --chart-5: 0.6 0.15 280;
+    /* Sidebar */
+    --sidebar: 1 0 0;
+    --sidebar-foreground: 0.258 0.02 250;
+    --sidebar-primary: 0.585 0.185 245;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.93 0.012 245;
+    --sidebar-accent-foreground: 0.585 0.185 245;
+    --sidebar-border: 0.922 0.012 240;
+    --sidebar-ring: 0.585 0.185 245;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
